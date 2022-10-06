@@ -103,29 +103,118 @@
             <article class="reservation"> <!-- 예약 -->
                 <h2>온라인 예약창</h2>
                 <form action="#" method="post">
-                    <label>
-                        예약 날짜
-                        <input type="date" required>
-                        <input type="date" required>
-                    </label>
-                    <label>인원<input type="number" value="1" min="1" max="20"></label>
-                    <input type="button" value="조회">
+                    <label for="rsvDate">예약 날짜</label>
+                    <input type="date" id="rsvDate" value="2022-10-06" title="체크인 날짜" required>
+                    <input type="date" value="2022-10-07" title="체크아웃 날짜" required>
+                    <label for="guestNum">인원</label>
+                    <input type="number" id="guestNum" value="1" min="1" max="20">
+                    <input class="search-bt" type="submit" value="조회">
                 </form>
             </article> <!-- reservation -->
 
             <section class="accommodations"> <!-- 숙박시설 -->
-                <h2>숙박시설</h2>
+                <div class="container">
+                    <h2>숙박시설</h2>
+                    <ul class="accommodations-menu">
+                        <li><a href="#">숲속의 집</a></li>
+                        <li><a href="#">숲속 수련장</a></li>
+                        <li><a href="#">휴양관</a></li>
+                        <li><a href="#">예약현황 보러가기 &gt;</a></li>
+                    </ul>
+                    <div class="accommodations-list">
+                        <div class="accommodations-list-flex">
+                            <div class="forest-house1">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 4인실</p>
+                                </div>
+                            </div>
+                            <div class="forest-house2">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 4인실</p>
+                                </div>
+                            </div>
+                            <div class="forest-house3">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 4인실</p>
+                                </div>
+                            </div>
+                            <div class="forest-house4">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 4인실</p>
+                                </div>
+                            </div>
+                            <div class="forest-house5">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 4인실</p>
+                                </div>
+                            </div>
+                            <div class="forest-house6">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 4인실</p>
+                                </div>
+                            </div>
+                            <div class="forest-house7">
+                                <span class="img"></span>
+                                <div class="text-box">
+                                    <strong>다래</strong>
+                                    <p>숲속의 집 6인실</p>
+                                </div>
+                            </div>
+                        </div> <!-- accommodations-list-box -->
+                    </div> <!--accommodations-list-->
+                    <div class="scrollbar">
+                        <span class="scroll-line"></span>
+                        <span class="scroll-bt"></span>
+                    </div>
+                </div> <!-- container -->
             </section> <!-- accommodations -->
 
             <section class="gallery">
                 <div class="container">
                     <h2>숲 둘러보기</h2>
-
-                </div>
+                    <p>삼나무숲의 웅장하고 아름다운 풍경을 감상하세요.</p>
+                    <a href="#">더보기 &gt;</a>
+                    <div class="gallery-change">
+                        <img src="images/gallery1.jpg" alt="건강산책로">
+                        <div class="gallery-bar">
+                            <span>건강 산책로</span>
+                            <span>삼나무 잎</span>
+                            <span></span>
+                            <span>장생의 숲길</span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>절물자연휴양림을 두르는 산책로로 자연 그대로의 숲을 느낄 수 있으며 전망대에서는 사방이 트인 전경을 감상하실 수 있습니다.</p>
+                        <div class="change-bt">
+                            <span class="lt-box"><span>&lt;</span></span>
+                            <span class="gt-box"><span>&gt;</span></span>
+                        </div>
+                    </div> <!-- gallery-change -->
+                </div> <!-- container -->
             </section> <!-- gallery -->
             
-            <div class="program-facilities-box">
+            <div class="program-facilities">
                 <div class="container">
+                    <div class="bullet">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <section class="program">
                     <h2>절물을 즐기는 여러가지 방법</h2>
                         <div class="child-program">
