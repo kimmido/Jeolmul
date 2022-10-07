@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 
-
 .wrapper {
     width: 100%;
 }
@@ -14,13 +13,19 @@
     background-color: pink;
 }
 
+section > h1 {
+    font-size: 0;
+}
+
+
 
 /* ========== header ========== */
 header {
     position: relative;
     width: 100%;
     height: 925px;
-    background: url(/images/main-img.jpg) no-repeat;
+    background: url(/images/main-img.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
 /* title-loginmenu-mainmenu */
@@ -132,27 +137,27 @@ header {
 }
 
 
+
 /* ========== main ========= */
 main {
     background-color: lightblue;
 }
 
 /* reservation */
-.reservation {
+.reservation h2 {
+    font-size: 0;
+}
+
+.reservation form {
     position: absolute;
     left: 50%; top: 892px;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     width: 620px; height: 66px;
-    text-align: center;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     background-color: #fff;
-}
-
-.reservation h2 {
-    font-size: 0;
 }
 
 .reservation form label,
@@ -160,13 +165,49 @@ main {
     font: 18px 'NanumSquareRound'; 
 }
 
-.reservation input {
-    border: none;
+.reservation label {
+    line-height: 66px;
+    background-color: lavenderblush;
 }
 
+.reservation .rsv-date {
+    margin-left: 34px;
+}
+
+
+.reservation input {
+    border: none;
+    background-color: lavender;
+}
+
+.reservation button {
+    background-color: lightblue;
+}
+
+.reservation button{
+    width: 29px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 0;
+    /* background-color: transparent; */
+}
+.reservation #minus {
+    /* margin-top: -5px; */
+}
+
+.reservation #plus {
+    margin-right: 13px;
+}
+
+.reservation #guestNum {
+    text-align: center;
+}
+
+
 .reservation .search-bt {
-    width: 100px; height: 100%;
+    width: 106px; height: 100%;
     border-radius: 0 30px 30px 0;
+    cursor: pointer;
     background-color: #9c8c7e;
 }
 
@@ -325,6 +366,7 @@ main {
     display: block;
     overflow: hidden;
     width: 190px; height: 1px;
+    line-height: 57px;
     font-size: 22px;
     color: transparent;
     background-color: #9c8c7e;
@@ -334,7 +376,7 @@ main {
 
 .gallery-change .gallery-bar span:hover {
     height: 53px;
-    padding-top: 18px;
+    /* padding-top: 18px; */
     color: #fff;
 }
 
@@ -371,18 +413,127 @@ main {
     background-color: #9c8c7e;
 }
 
+.bullet > span {
+    display: block;
+    width: 9px; height: 9px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #9c8c7e;
+}
+
+.bullet > span:first-child {
+    margin-top: 253px;
+}
+
+.bullet > span:nth-child(2),
+.bullet > span:nth-child(4),
+.bullet > span:last-child {
+    margin-top: 76px;
+}
+
+.bullet > span:nth-child(3),
+.bullet > span:nth-child(5) {
+    margin-top: 496px;
+}
+
 /* program */
 .program h2 {
     text-align: center;
     color: #675341;
 }
 
-.program > div {
-    height: 590px;
-    margin-left: 35px;
+.program-conbox {
+    display: flex;
+    justify-content: space-between;
+    height: 416px;
     background-color: antiquewhite;
 }
 
+.program h3,
+.program .program-conbox {
+    margin-left: 35px;
+}
+
+.program h3 {
+    color: #675341;
+    margin-top: 93px;
+    margin-bottom: 57px;
+}
+
+.program-conbox img,
+.program-conbox .con-text {
+    border-radius: 20px;
+}
+
+.program-conbox img {
+    display: block;
+    width: 603px; 
+    background-color: gray;
+}
+
+.con-text {
+    position: relative;
+    width: 520px;
+    color: #fff;
+    padding-top: 60px;
+    padding-left: 48px;
+    background-color: #9c8c7e;
+}
+
+.con-text p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.con-text ul {
+    position: absolute;
+    bottom: 114px;
+}
+
+.con-text li {
+    font: 16px 'NanumSquareRound';
+    padding-top: 33px;
+    /* background-color: aqua; */
+}
+
+.con-text strong {
+    font-weight: 600;
+    text-align: right;
+    color: #675341;
+}
+
+.con-text span {
+    padding-left: 16px;
+    /* background-color: coral; */
+}
+
+.child-program .timetable2 {
+    display: block;
+    margin-left: 63px;
+}
+
+.con-text a {
+    position: absolute;
+    left: 50%; bottom: 27px;
+    transform: translateX(-50%);
+    display: block;
+    width: 121px; height: 41px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.con-text a:hover {
+    background-color: #675341;
+    border-color: #675341;
+}
+
+/* add-facilities */
+.add-facilities {
+    margin-top: 175px;
+}
 
 /* ========== footer ========== */
 footer {

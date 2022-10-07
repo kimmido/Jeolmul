@@ -103,16 +103,19 @@
             <article class="reservation"> <!-- 예약 -->
                 <h2>온라인 예약창</h2>
                 <form action="#" method="post">
-                    <label for="rsvDate">예약 날짜</label>
-                    <input type="date" id="rsvDate" value="2022-10-06" title="체크인 날짜" required>
-                    <input type="date" value="2022-10-07" title="체크아웃 날짜" required>
+                    <label class="rsv-date" for="rsvDate">예약 날짜</label>
+                    <input class="stay" type="date" id="rsvDate" value="2022-10-06" title="체크인 날짜" required>
+                    <input class="stay" type="date" value="2022-10-07" title="체크아웃 날짜" required>
                     <label for="guestNum">인원</label>
-                    <input type="number" id="guestNum" value="1" min="1" max="20">
+                    <button id="minus">-</button>
+                    <input type="text" value="1" id="guestNum" name="guestNum" size="1" maxlength="2">
+                    <button id="plus">+</button>
                     <input class="search-bt" type="submit" value="조회">
                 </form>
             </article> <!-- reservation -->
 
             <section class="accommodations"> <!-- 숙박시설 -->
+                <h1>accommodations</h1>
                 <div class="container">
                     <h2>숙박시설</h2>
                     <ul class="accommodations-menu">
@@ -182,6 +185,7 @@
             </section> <!-- accommodations -->
 
             <section class="gallery">
+                <h1>gallery</h1>
                 <div class="container">
                     <h2>숲 둘러보기</h2>
                     <p>삼나무숲의 웅장하고 아름다운 풍경을 감상하세요.</p>
@@ -215,34 +219,104 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <section class="program">
-                    <h2>절물을 즐기는 여러가지 방법</h2>
-                        <div class="child-program">
-                            
-                        </div>
-                        <div class="forest-commentary">
-                            
-                        </div>
-                        <div class="forest-healing">
-                            
-                        </div>
-                    </section> <!-- program -->
-                    
-                    <section class="add-facilities">
-                        <div class="soccer-field">
-                            <img src="" alt="#">
-                        </div>
-                        <div class="conference-room">
-                            <img src="" alt="#">
-                        </div>
-                        <div class="small-meeting-room">
-                            <img src="" alt="#">
-                        </div>
-                        <div class="playground">
-                            <img src="" alt="#">
-                        </div>
-                    </section> <!-- add-facilities -->
                 </div> <!-- container -->
+                <section class="program">
+                    <h2>절물을 즐기는 여러가지 방법</h2>
+                    <div class="container">
+                        <div class="child-program">
+                            <h3>유아 숲 체험 프로그램</h3>
+                            <div class="program-conbox">
+                                <img src="images" alt="유아숲체험프로그램">
+                                <div class="con-text">
+                                    <p>작은 탐험가가 되어 휴양림 숲 곳곳을 누벼보세요.<br>계절에 따라 프로그램의 내용이 달라집니다.</p>
+                                    <ul>
+                                        <li>
+                                            <strong>운영기간</strong>
+                                            <span class="date-term">8.23 ~ 12.10 ( 월 ~ 금요일 )</span>
+                                        </li>
+                                        <li>
+                                            <strong>체험시간</strong>
+                                            <span class="timetable">오전 10:00 ~ 12:00</span><span class="timetable2">오후 14:00 ~ 16:00</span>
+                                        </li>
+                                        <li>
+                                            <strong>비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용</strong>
+                                            <span>무료 (※휴양림 입장료 및 주차료 별도)</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#">예약하기</a>
+                                </div>  <!-- program-text -->
+                            </div> <!-- program-content -->
+                        </div> <!-- child-program -->
+                        <div class="forest-commentary">
+                            <h3>숲 해설 프로그램</h3>
+                            <div class="program-conbox">
+                                <div class="con-text">
+                                    <p>그냥 스쳐 지나가던 것들의 이야기를 들어보세요.<br>더 깊고 의미있는 추억이 생길 거예요.</p>
+                                    <ul>
+                                        <li>
+                                            <strong>운영기간</strong>
+                                            <span class="date-term">4.11 ~ 11.30 ( 월 ~ 금요일 )</span>
+                                        </li>
+                                        <li>
+                                            <strong>체험시간</strong>
+                                            <span class="timetable">90분</span>
+                                        </li>
+                                        <li>
+                                            <strong>비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용</strong>
+                                            <span>무료 (※휴양림 입장료 및 주차료 별도)</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#">예약하기</a>
+                                </div>  <!-- program-text -->
+                                <img src="images" alt="유아숲체험프로그램">
+                            </div> <!-- program-content -->
+                        </div> <!-- forest-commentary -->
+                        <div class="forest-healing">
+                            <h3>산림치유 프로그램</h3>
+                            <div class="program-conbox">
+                                <img src="images" alt="유아숲체험프로그램">
+                                <div class="con-text">
+                                    <p>자연의 향취를 맡으며 스스로에게 휴식을 주세요.<br>스트레스가 완화되고 머리가 맑아질 거예요.</p>
+                                    <ul>
+                                        <li>
+                                            <strong>운영기간</strong>
+                                            <span class="date-term">연중 ( 월 ~ 금요일 )</span>
+                                        </li>
+                                        <li>
+                                            <strong>체험시간</strong>
+                                            <span class="timetable">오전 9:00 ~ 17:00</span>
+                                        </li>
+                                        <li>
+                                            <strong>비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용</strong>
+                                            <span>무료 (※휴양림 입장료 및 주차료 별도)</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#">예약하기</a>
+                                </div>  <!-- program-text -->
+                            </div> <!-- program-content -->
+                        </div> <!-- forest-healing -->
+                    </div> <!-- container -->
+                </section> <!-- program -->
+                    
+                <section class="add-facilities">
+                    <h1>부대시설</h1>
+                    <div class="container">
+                        <div class="flex-facilities">
+                            <div class="soccer-field">
+                                <img src="" alt="">
+                            </div>
+                            <div class="conference-room">
+                                <img src="" alt="">
+                            </div>
+                            <div class="small-meeting-room">
+                                <img src="" alt="">
+                            </div>
+                            <div class="playground">
+                                <img src="" alt="">
+                            </div>
+                        </div> <!-- flex-facilities -->
+                    </div> <!-- container -->
+                </section> <!-- add-facilities -->
             </div> <!-- program-facilities-box -->
                 
 
