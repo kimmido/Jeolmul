@@ -24,7 +24,7 @@ header {
     position: relative;
     width: 100%;
     height: 925px;
-    background: url(/images/main-img.jpg) no-repeat fixed;
+    background: url(../images/main-img.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -37,7 +37,7 @@ header {
 }
 
 /* title */
-.title h1 {
+#title > a {
     width: 200px; height: 100px;
     line-height: 100px;
     color: #fff;
