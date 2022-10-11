@@ -19,7 +19,6 @@ section > h1 {
 
 
 
-
 /* ================= header ================= */
 header {
     position: relative;
@@ -29,20 +28,11 @@ header {
     background-size: cover;
 }
 
-header::before { /* 스크립트에서 메뉴에 마우스 올렸을 때 나타나도록 설정 */
-    /* content: '';
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%; height: 320px;
-    background-color: #fff; */
-}
-
-
 /* title-loginmenu-mainmenu */
 .title-loginmenu-mainmenu {
     position: relative;
     width: 100%;
-    height: 99px;
+    height: 99px; 
     border-bottom: 1px solid #fff;
     /* border-bottom: 1px solid #333; */
     /* background-color: antiquewhite; */
@@ -94,15 +84,18 @@ header::before { /* 스크립트에서 메뉴에 마우스 올렸을 때 나타�
 }
 
 /* main-menu */
-.main-menu {
-    /* height: 320px;
+/* .main-menu:hover {
+    height: 320px;
     margin-top: -100px;
-    background-color: #fff; */
-}
+    background-color: #fff;
+} */
 
 .main-menu ul li{
     text-align: center;
-    width: 135px;
+}
+
+.gnb > li {
+    width: 20%;
 }
 
 .gnb {
@@ -111,14 +104,14 @@ header::before { /* 스크립트에서 메뉴에 마우스 올렸을 때 나타�
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 675px; height: 255px;
+    width: 700px; height: 255px;
     margin: 0 auto;
     /* background-color: rgb(190, 102, 102); */
 }
 
 
 .gnb > li > a {
-    /* padding: 0 22px 15px; */
+    padding: 0 22px 15px;
     display: block;
     height: 34px;
     color: #fff;
@@ -137,7 +130,9 @@ header::before { /* 스크립트에서 메뉴에 마우스 올렸을 때 나타�
 
 .lnb li a{
     display: block;
-    padding: 15px 0;
+    /* height: 50px; */
+    padding-top: 19px;
+    padding-bottom: 13px;
     font-size: 18px;
 }
 
@@ -797,29 +792,6 @@ main {
     left: 20px;
 }
 
-/* add-forest */
-.add-forest {
-    height: 250px;
-    padding-top: 76px;
-    color: #fff;
-    text-align: center;
-    background: gray;
-}
-
-.add-forest-text {
-    display: block;
-    font-size: 30px;
-}
-
-.add-forest a {
-    margin: 18px auto;
-    width: 259px; height: 56px;
-    line-height: 60px;
-    color: #fff;
-    font-size: 24px;
-    border: 1px solid #fff;
-    border-radius: 28px;
-}
 
 /* .add-Info > notice-review */
 .notice-reivew {
@@ -927,12 +899,104 @@ main {
 
 .sns img {
     width: 30px;
-    margin-top: -5px;
+    margin-top: -6px;
+    margin-right: 17px;
 }
+
+/* add-forest */
+.add-forest {
+    height: 250px;
+    padding-top: 76px;
+    color: #fff;
+    text-align: center;
+    background: gray;
+}
+
+.add-forest-text {
+    display: block;
+    font-size: 30px;
+}
+
+.add-forest a {
+    margin: 18px auto;
+    width: 259px; height: 56px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid #fff;
+    border-radius: 28px;
+}
+
 
 
 /* ================= footer ================= */
 footer {
     height: 250px;
     background-color: #9c8c7e;
+}
+
+.info-related {
+    justify-content: space-between;
+    font: 16px 'NanumSquareRound';
+    color: #fff;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info a,
+.related select {
+    color: #fff;
+}
+
+/* info */
+.info {
+    width: 800px;
+    /* background-color: darkgoldenrod; */
+}
+
+.info a:first-child {
+    margin-top: 62px;
+}
+
+.info a {
+    display: inline-block;
+}
+
+.info address {
+    height: 54px;
+    border-right: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.info p {
+    font-size: 14px;
+}
+
+/* related */
+.related {
+    margin-top: 62px;
+    margin-left: 90px;
+    /* background-color: darkred; */
+}
+
+.related select {
+    width: 151px; height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font: 16px 'NanumSquareRound';
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+
+.related .call-time {
+    display: block;
+    margin-top: 47px;
+}
+
+.related address {
+    font-size: 24px;
 }
