@@ -61,10 +61,11 @@ header {
     /* background-color: aliceblue; */
 }
 
+
 .login-menu ul {
     display: flex;
     justify-content: space-between;
-    width: 265px;
+    width: 270px;
 }
 
 .login-menu li > a {
@@ -81,6 +82,10 @@ header {
     color: #fff;
     /* color: #333; */
     background-color: transparent;
+}
+
+.login-menu select option {
+    color: #333;
 }
 
 /* main-menu */
@@ -192,16 +197,12 @@ header {
 
 
 /* ================= main ================= */
-main {
-    background-color: lightblue;
-}
-
 /* reservation */
 .reservation h2 {
     font-size: 0;
 }
 
-.reservation form {
+.rsv-box {
     position: absolute;
     left: 50%; top: 892px;
     transform: translateX(-50%);
@@ -213,53 +214,51 @@ main {
     background-color: #fff;
 }
 
-.reservation form label,
-.reservation form input {
+.rsv-box label,
+.rsv-box input {
     font: 18px 'NanumSquareRound'; 
 }
 
-.reservation label {
+.rsv-box label {
     line-height: 66px;
     background-color: lavenderblush;
 }
 
-.reservation .rsv-date {
-    margin-left: 34px;
-}
-
-
-.reservation input {
+.rsv-box input {
     border: none;
     background-color: lavender;
 }
 
-.reservation button {
-    background-color: lightblue;
+.rsv-box .rsv-date {
+    margin-left: 34px;
 }
 
-.reservation button{
+.rsv-box .num-bt{
     width: 29px;
     font-size: 24px;
     cursor: pointer;
     border: 0;
     /* background-color: transparent; */
+    background-color: lightblue;
 }
 
-.reservation #minus {
+.rsv-box #minus {
     /* margin-top: -5px; */
 }
 
-.reservation #plus {
+.rsv-box #plus {
     margin-right: 13px;
 }
 
-.reservation #guestNum {
+.rsv-box #guestNum {
     text-align: center;
 }
 
 
-.reservation .search-bt {
+.rsv-box .search-bt {
     width: 106px; height: 100%;
+    padding-right: 3px;
+    color: #fff;
     border-radius: 0 30px 30px 0;
     cursor: pointer;
     background-color: #9c8c7e;
@@ -272,18 +271,14 @@ main {
     /* background-color: purple; */
 }
 
-.accommodations-menu  {
+.room-type-status  {
     display: flex;
     width: 600px;
     margin-top: 35px;
     margin-bottom: 44px;
 }
 
-.accommodations-menu li {
-    background-color: blue;
-}
-
-.accommodations-menu li > a {
+.room-type-status li > a {
     display: block;
     width: 138px; height: 39px;
     margin-right: 10px;
@@ -294,9 +289,11 @@ main {
     border: 1px solid #9c8c7e;
     border-radius: 20px;
     background-color: #fff;
+
+    transition: all 0.5s;
 }
 
-.accommodations-menu li:last-child > a {
+.room-type-status li:last-child > a {
     margin-left: 6px;
     font-size: 18px;
     color: #333;
@@ -304,53 +301,55 @@ main {
     border-radius: 0;
 }
 
-.accommodations-menu li > a:hover {
+.room-type-status li > a:hover {
     color: #fff;
     font-weight: bold;
     background-color: #9c8c7e;
 }
 
-.accommodations-menu li:last-child > a:hover {
+.room-type-status li:last-child > a:hover {
     color: #9c8c7e;
     background-color: transparent;
 }
 
-.accommodations-list {
+.room-list {
     width: 100%;
 }
 
-.accommodations-list-flex {
+.room-list-flex {
     display: flex;
     justify-content: space-between;
     width: 2100px;
 }
 
-.accommodations-list-flex > div {
+.room-list-flex > div {
     overflow: hidden;
     width: 280px;
     margin-right: 20px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
+
+    transition: transform 0.4s;
 }
 
-.accommodations-list div .img {
+.room-list div .img {
     display: block;
     height: 218px;
     background-color: gray;
 }
 
-.accommodations-list .text-box {
+.room-list .text-box {
     padding-top: 17px;
     height: 82px;
     text-align: center;
     background-color: #fff;
 }
 
-.accommodations-list .text-box > strong {
+.room-list .text-box > strong {
     font-size: 24px;
 }
 
-.accommodations-list-flex > div:hover {
+.room-list-flex > div:hover {
     transform: scale(1.05);
 }
 
@@ -358,7 +357,7 @@ main {
     position: relative;
     height: 26px;
     margin-top: 48px;
-    background-color: plum;
+    /* background-color: plum; */
 }
 
 .scrollbar .scroll-line {
@@ -531,7 +530,7 @@ main {
     display: flex;
     justify-content: space-between;
     height: 416px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .program h3 {
@@ -604,7 +603,7 @@ main {
 /* add-facilities */
 .add-facilities {
     margin-top: 175px;
-    background-color: lavender;
+    /* background-color: lavender; */
 }
 
 .flex-facilities {
@@ -640,13 +639,13 @@ main {
     /* background-color: lightblue; */
 }
 
-.flex-facilities .pointer,
+.flex-facilities .fac-pointer,
 .pointer a {
     font: 18px 'NanumSquareRound';
     color: #fff;
 }
 
-.flex-facilities .pointer {
+.fac-pointer {
     position: absolute;
     bottom: 0;
     width: 280px; height: 0;
@@ -657,21 +656,21 @@ main {
     transition: all 1s;
 }
 
-.pointer p {
+.fac-pointer p {
     margin-top: 91px;
     margin-bottom: 84px;
 }
 
-.pointer .timetable {
+.fac-pointer .timetable {
     display: block;
     margin-bottom: 27px;
 }
 
-.pointer address {
+.fac-pointer address {
     margin-bottom: 84px;
 }
 
-.pointer a {
+.fac-pointer a {
     position: absolute;
     left: 50%; bottom: 0;
     transform: translateX(-50%);
@@ -681,11 +680,11 @@ main {
     transition: all 1s;
 }
 
-.flex-facilities > div:hover .pointer{
+.flex-facilities > div:hover .fac-pointer{
     height: 468px;
 }
 
-.flex-facilities > div:hover .pointer a {
+.flex-facilities > div:hover .fac-pointer a {
     bottom: 91px;
 }
 
@@ -844,7 +843,7 @@ main {
 }
 
 .notice .board a:hover {
-    color: #675341;
+    color: #9c8c7e;
 }
 
 /* review */
@@ -864,9 +863,10 @@ main {
 }
 
 .review-card {
+    position: relative;
     width: 150px;
     height: 208px;
-    padding: 14px;
+    padding: 13px;
     background-color: #ebe4dd;
 }
 
@@ -874,15 +874,18 @@ main {
     display: block;
     width: 122px;
     height: 76px;
-    background: url(../images/후기이미지.png) no-repeat;
+    background: url(../images/후기이미지\(ebe4dd\).png) no-repeat 50% 50%;
     background-color: #fff;
 }
 
 .review-card .re-title {
+    display: block;
     margin-top: 15px;
 }
 
 .review-card .re-text {
+    position: absolute;
+    bottom: 14px;
     font-size: 15px;
 }
 
@@ -905,11 +908,12 @@ main {
 
 /* add-forest */
 .add-forest {
+    overflow: hidden;
     height: 250px;
     padding-top: 76px;
     color: #fff;
     text-align: center;
-    background: gray;
+    background: url(../images/숲나들e.png) no-repeat;
 }
 
 .add-forest-text {
@@ -926,7 +930,6 @@ main {
     border: 1px solid #fff;
     border-radius: 28px;
 }
-
 
 
 /* ================= footer ================= */
@@ -989,6 +992,10 @@ footer {
     font: 16px 'NanumSquareRound';
     border: 1px solid #fff;
     background-color: transparent;
+}
+
+.related select option {
+    color: #333;
 }
 
 
