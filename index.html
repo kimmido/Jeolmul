@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" property="og:title" content="절물자연휴양림">
+    <meta name="images" property="og:image" content="./images/thumnail.png">
+    <meta name="description" property="og:description" content="제주도의 아름다운 삼나무 숲">
+    <meta name="type" property="og:type" content="article">
+    <link rel="shortcut icon" href="./images/favicon.svg">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
@@ -108,10 +113,10 @@
                     <label class="rsv-date" for="rsvDate">예약 날짜</label>
                     <input class="date" type="date" id="rsvDate" value="2022-10-06" title="체크인 날짜" required>
                     <input class="date" type="date" value="2022-10-07" title="체크아웃 날짜" required>
-                    <label for="guestNum">인원</label>
-                    <button class="num-bt" id="minus">-</button>
+                    <label class="guest" for="guestNum">인원</label>
+                    <button type="button" class="num-bt" id="minus">-</button>
                     <input type="text" value="1" id="guestNum" name="guestNum" size="1" maxlength="2">
-                    <button class="num-bt" id="plus">+</button>
+                    <button type="button" class="num-bt" id="plus">+</button>
                     <input class="search-bt" type="submit" value="조회">
                 </form>
             </article> <!-- reservation -->
@@ -129,52 +134,66 @@
                     <div class="room-list">
                         <div class="room-list-flex">
                             <div class="forest-house1">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(1).jpg" alt="숙소1">
+                                </div>
                                 <div class="text-box">
                                     <strong>다래</strong>
                                     <p>숲속의 집 4인실</p>
                                 </div>
                             </div>
                             <div class="forest-house2">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(2).jpg" alt="숙소2">
+                                </div>
                                 <div class="text-box">
-                                    <strong>다래</strong>
+                                    <strong>머루</strong>
                                     <p>숲속의 집 4인실</p>
                                 </div>
                             </div>
                             <div class="forest-house3">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(3)-2.jpg" alt="숙소3">
+                                </div>
                                 <div class="text-box">
-                                    <strong>다래</strong>
+                                    <strong>구상나무</strong>
                                     <p>숲속의 집 4인실</p>
                                 </div>
                             </div>
                             <div class="forest-house4">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(4).jpg" alt="숙소4">
+                                </div>
                                 <div class="text-box">
-                                    <strong>다래</strong>
-                                    <p>숲속의 집 4인실</p>
+                                    <strong>팽나무</strong>
+                                    <p>숲속의 집 6인실</p>
                                 </div>
                             </div>
                             <div class="forest-house5">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(5).jpg" alt="숙소5">
+                                </div>
                                 <div class="text-box">
-                                    <strong>다래</strong>
-                                    <p>숲속의 집 4인실</p>
+                                    <strong>상수리나무</strong>
+                                    <p>휴양관 6인실</p>
                                 </div>
                             </div>
                             <div class="forest-house6">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(6).jpg" alt="숙소6">
+                                </div>
                                 <div class="text-box">
-                                    <strong>다래</strong>
-                                    <p>숲속의 집 4인실</p>
+                                    <strong>벚나무</strong>
+                                    <p>숲속 수련장 20인실</p>
                                 </div>
                             </div>
                             <div class="forest-house7">
-                                <span class="img"></span>
+                                <div class="img-box">
+                                    <img src="./images/room(7).jpg" alt="숙소7">
+                                </div>
                                 <div class="text-box">
-                                    <strong>다래</strong>
-                                    <p>숲속의 집 6인실</p>
+                                    <strong>소나무</strong>
+                                    <p>숲속 수련장 12인실</p>
                                 </div>
                             </div>
                         </div> <!-- accommodations-list-box -->

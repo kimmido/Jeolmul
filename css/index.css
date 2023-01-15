@@ -168,7 +168,8 @@ header {
 
 .main-banner-text strong {
     display: block;
-    margin: 340px 0 48px;
+    padding-top: 340px;
+    margin-bottom: 48px;
     font-size: 48px;
 }
 
@@ -221,42 +222,51 @@ header {
 
 .rsv-box label {
     line-height: 66px;
-    background-color: lavenderblush;
+    /* background-color: lavenderblush; */
 }
 
 .rsv-box input {
     border: none;
-    background-color: lavender;
+    /* background-color: lavender; */
 }
 
 .rsv-box .rsv-date {
-    margin-left: 34px;
+    margin-left: 30px;
+    width: 80px;
+}
+
+.rsv-box .date {
+    width: 130px;
 }
 
 .rsv-box .num-bt{
-    width: 29px;
     font-size: 24px;
     cursor: pointer;
     border: 0;
-    /* background-color: transparent; */
-    background-color: lightblue;
+    background-color: transparent;
+    /* background-color: lightblue; */
+}
+
+.rsv-box .guest {
+    width: 50px;
+    text-align: right;
 }
 
 .rsv-box #minus {
-    /* margin-top: -5px; */
-}
-
-.rsv-box #plus {
-    margin-right: 13px;
+    margin-left: 8px;
 }
 
 .rsv-box #guestNum {
+    width: 30px;
     text-align: center;
 }
 
+.rsv-box #plus {
+    margin-right: 8px;
+}
 
 .rsv-box .search-bt {
-    width: 106px; height: 100%;
+    width: 100px; height: 100%;
     padding-right: 3px;
     color: #fff;
     border-radius: 0 30px 30px 0;
@@ -267,8 +277,6 @@ header {
 /* accommodations */
 .accommodations {
     margin: 150px 0;
-    /* height: 521px; */
-    /* background-color: purple; */
 }
 
 .room-type-status  {
@@ -332,10 +340,14 @@ header {
     transition: transform 0.4s;
 }
 
-.room-list div .img {
+.room-list div .img-box {
     display: block;
     height: 218px;
     background-color: gray;
+}
+
+.room-list .img-box img {
+    height: 100%;
 }
 
 .room-list .text-box {
@@ -350,7 +362,7 @@ header {
 }
 
 .room-list-flex > div:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .scrollbar {
@@ -369,6 +381,8 @@ header {
 }
 
 .scrollbar .scroll-bt {
+    position: absolute;
+    top: 0;
     display: block;
     width: 90px; height: 26px;
     border-radius: 14px;
