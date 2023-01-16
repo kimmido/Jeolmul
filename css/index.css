@@ -163,7 +163,6 @@ header::before {
 /* main-banner */
 .main-banner-text {
     color: #fff;
-    /* background-color: mediumturquoise; */
 }
 
 .main-banner-text strong {
@@ -228,12 +227,10 @@ header::before {
 
 .rsv-box label {
     line-height: 66px;
-    /* background-color: lavenderblush; */
 }
 
 .rsv-box input {
     border: none;
-    /* background-color: lavender; */
 }
 
 .rsv-box .rsv-date {
@@ -250,7 +247,6 @@ header::before {
     cursor: pointer;
     border: 0;
     background-color: transparent;
-    /* background-color: lightblue; */
 }
 
 .rsv-box .guest {
@@ -391,7 +387,6 @@ header::before {
     position: relative;
     height: 26px;
     margin-top: 48px;
-    /* background-color: plum; */
 }
 
 .scrollbar .scroll-line {
@@ -617,7 +612,6 @@ header::before {
 .con-text li {
     font: 16px 'NanumSquareRound';
     padding-top: 33px;
-    /* background-color: aqua; */
 }
 
 .con-text strong {
@@ -628,7 +622,6 @@ header::before {
 
 .con-text span {
     padding-left: 16px;
-    /* background-color: coral; */
 }
 
 .child-program .timetable2 {
@@ -648,7 +641,6 @@ header::before {
 /* add-facilities */
 .add-facilities {
     margin-top: 175px;
-    /* background-color: lavender; */
 }
 
 .flex-facilities {
@@ -681,7 +673,6 @@ header::before {
     text-align: center;
     font-size: 22px;
     color: #fff;
-    /* background-color: lightblue; */
 }
 
 .flex-facilities .fac-pointer,
@@ -737,7 +728,6 @@ header::before {
 .add-Info {
     margin: 151px 0;
     height: 665px;
-    /* background-color: sandybrown; */
 }
 
 .add-Info h2 {
@@ -791,14 +781,6 @@ header::before {
     line-height: 23px;
 }
 
-.Directions #plus {
-    top: 18px;
-}
-
-.Directions #minus {
-    top: 54px;
-}
-
 .Directions address {
     margin-top: 34px;
     margin-bottom: 33px;
@@ -844,7 +826,6 @@ header::before {
 /* .add-Info > notice-review */
 .notice-reivew {
     width: 480px;
-    /* background-color: darkolivegreen; */
 }
 
 /* notice */
@@ -877,18 +858,15 @@ header::before {
 .notice .board .bullet {
     width: 30px;
     text-align: center;
-    /* background-color: dodgerblue; */
 }
 
 .notice .board a {
     width: 346px;
-    /* background-color: darkkhaki; */
 }
 
 .notice .board time {
     text-align: center;
     width: 104px;
-    /* background-color: darkslategray; */
 }
 
 .notice .board a:hover {
@@ -1006,7 +984,6 @@ footer {
 /* info */
 .info {
     width: 800px;
-    /* background-color: darkgoldenrod; */
 }
 
 .info a:first-child {
@@ -1031,7 +1008,6 @@ footer {
 .related {
     margin-top: 62px;
     margin-left: 90px;
-    /* background-color: darkred; */
 }
 
 .related select {
