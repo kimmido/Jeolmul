@@ -76,30 +76,21 @@ $(function() {
         return num;
     }
 
-    
+    let windowHeight = $(window).height();
+    let programTop = $('.program h3')
+    let program = $('.program-conbox')
+    let pos;
 
-    const flexWidth = $('.room-list-flex').width();
-    const scrollBt = $('.scroll-bt').width();
-    const scrollWidth = $('.scroll-line').width() - scrollBt;
+    // $('.program-conbox').fadeOut();
 
-    console.log(flexWidth);
-    console.log(scrollBt);
-    console.log(scrollWidth);
+    $(window).on("scroll", function() {
+        pos = $(this).scrollTop();
+        for(let i = 0; i < programTop.length; i++) {
+            programShowPos = programTop.eq(i).offset().top - windowHeight * 0.4
 
-    $('.scroll-bt').on("mousedown", function(e) { 
-        $(this).on("mousemove", function(e) {
-            moveBt(e) 
-        })
-    });
-
-    function moveBt(e) {
-        // e.target.position().left
-        console.log($(e.target).position().left);
-    }
-
-
-
-
-
-
+            if(pos > programShowPos) {
+                program.eq(i).addClass("on");
+            }
+        }
+    })
 }); 
