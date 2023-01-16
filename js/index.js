@@ -47,7 +47,41 @@ $(function() {
         $('#guestNum').val(num);
     }
     
+
+
+
+    const scrollbarWidth = $('.scroll-line').width() - $('.scroll-bt').width()
+    console.log(scrollbarWidth);
     
+    let posInBt;
+
+    $('.scroll-bt').on({
+        "dragstart" : function(e) {
+            posInBt = e.pageX - $('.scroll-bt').offset().left
+            $('.scrollbar').on("dragover", function(e) { scrollBtMove(e) })
+        },
+    })
+
+    let buttonLeft;
+    let listPos;
+
+    function scrollBtMove(e) {
+        e = e.originalEvent;
+        buttonLeft = e.pageX - $('.scrollbar').offset().left - posInBt;
+        
+        if (buttonLeft <= 0 ) { buttonLeft = 0; }
+        if (buttonLeft >= scrollbarWidth) { buttonLeft = scrollbarWidth; }
+
+        listPos = buttonLeft / scrollbarWidth * 100;
+        $('.room-list').css({"transform" : `translateX(-${listPos}%)`})
+
+        $('.scroll-bt').css({
+            "left" : buttonLeft + "px",
+            "cursor" : "default"
+        });
+    }
+
+
 
     $('.lt-bt').on("click", function() { galleryChange(-1) })
     $('.gt-bt').on("click", function() { galleryChange(1) })
