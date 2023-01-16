@@ -6,7 +6,7 @@ $(function() {
         },
         "mouseleave" : function() {
             $(".title-loginmenu-mainmenu").removeClass("header-hover");
-            $('.lnb').fadeOut(200, "linear");
+            $('.lnb').fadeOut(0, "linear");
         }
     })
 
@@ -20,7 +20,7 @@ $(function() {
         $(this).addClass("on")
 
         $('header').fadeOut(300, "linear", function() {
-            $('header').css({"background-image" : `url('../images/main-img(${index}).jpg')` })
+            $('header').css({"background-image" : `url('../images/main-img(${index}).png')` })
             $('header').fadeIn(300, "linear")
         })
     })
@@ -76,12 +76,12 @@ $(function() {
         return num;
     }
 
+
+
     let windowHeight = $(window).height();
     let programTop = $('.program h3')
     let program = $('.program-conbox')
     let pos;
-
-    // $('.program-conbox').fadeOut();
 
     $(window).on("scroll", function() {
         pos = $(this).scrollTop();
