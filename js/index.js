@@ -75,10 +75,7 @@ $(function() {
         listPos = buttonLeft / scrollbarWidth * 100;
         $('.room-list').css({"transform" : `translateX(-${listPos}%)`})
 
-        $('.scroll-bt').css({
-            "left" : buttonLeft + "px",
-            "cursor" : "default"
-        });
+        $('.scroll-bt').css({ "left" : buttonLeft + "px" });
     }
 
 
