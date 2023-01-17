@@ -20,7 +20,7 @@ $(function() {
         $(this).addClass("on")
 
         $('header').fadeOut(300, "linear", function() {
-            $('header').css({"background-image" : `url('../images/main-img(${index}).png')` })
+            $('header').css({"background-image" : `url('./images/main-img(${index}).png')` })
             $('header').fadeIn(300, "linear")
         })
     })
