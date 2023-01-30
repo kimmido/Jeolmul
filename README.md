@@ -1,7 +1,7 @@
 # 절물자연휴양림
-리뉴얼페이지
+Renewal page
 
-![메인헤더](./images/jeolmul_header.png)
+![기기목업](./images/jeolmul_mockup.png)
 
 - 기여도 : 100% (개인작업)
 - 형식 : 적응형
